@@ -9,9 +9,8 @@ class Triangle
       puts :equilateral
     elsif (length_1 == length_2) != length_3 
       puts :isosceles 
-    else 
+    elsif
       puts :scalene
-    end 
     else 
       raise TriangleError 
     end 
