@@ -7,12 +7,16 @@ class Triangle
   
   def kind(length_1,length_2,length_3)
     if length_ == length_2 == lenght_3 
-      puts "equilateral"
+      puts :equilateral
     elsif (length_1 == length_2)not.eq_to length_3 
-      puts "isosceles" 
-    else (length_1, length_2, length_3)not.eq 
-      puts "scalene"
+      puts :isosceles 
+    else 
+      puts :scalene
     end 
+    else 
+      raise TriangleError 
+    end 
+  end 
     
 
 class TriangleError < StandardError 
