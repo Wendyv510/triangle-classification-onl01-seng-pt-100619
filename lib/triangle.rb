@@ -1,6 +1,5 @@
 class Triangle
   
-  attr_accessor :equilateral, :isosceles, :scalene 
   
   def initialize(length_1,length_2,lenght_3)
   end 
@@ -8,7 +7,7 @@ class Triangle
   def kind(length_1,length_2,length_3)
     if length_ == length_2 == lenght_3 
       puts :equilateral
-    elsif (length_1 == length_2)not.eq_to length_3 
+    elsif (length_1 == length_2) != length_3 
       puts :isosceles 
     else 
       puts :scalene
