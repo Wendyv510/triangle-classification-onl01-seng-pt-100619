@@ -2,19 +2,18 @@ class Triangle
   
   
   def initialize(length_1,length_2,lenght_3)
+    @triangle_sides = [] 
+    @triangle_sides << length_1
+    @triangle_sides << length_2
+    @triangle_sides << length_3
   end 
   
-  def kind(length_1,length_2,length_3)
-    if length_1 == length_2 == lenght_3 
-      puts :equilateral
-    elsif (length_1 == length_2) != length_3 
-      puts :isosceles 
-    elsif
-      puts :scalene
-    else 
-      raise TriangleError 
-    end 
-  end 
+  def valid?
+    sum_one_two = @triangle_sides[0] + @triangle_sides[1]
+    sum_one_three = @triangle_sides[0] + @triangle_sides[2]
+    sum_two_three = @triangle_sides[1] + @triangle_sides[2]
+    
+    if (@triangle_sides.none? {|side| side <= 0})
     
 
 class TriangleError < StandardError 
