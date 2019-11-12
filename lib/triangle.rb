@@ -1,11 +1,13 @@
 class Triangle
   
+  attr_accessor :triangle_sides 
   
-  def initialize(length_1,length_2,lenght_3)
+  
+  def initialize(side_1,side_2,side_3)
     @triangle_sides = [] 
-    @triangle_sides << length_1
-    @triangle_sides << length_2
-    @triangle_sides << length_3
+    @triangle_sides << side_1
+    @triangle_sides << side_2
+    @triangle_sides << side_3
   end 
   
   def valid?
